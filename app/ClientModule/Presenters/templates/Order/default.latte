@@ -1,0 +1,54 @@
+{block content}
+{include '../headerMobile.latte'}
+
+<div class="d-flex flex-column flex-root">
+    <div class="d-flex flex-row flex-column-fluid page">
+        <div class="d-flex flex-column flex-row-fluid wrapper" id="kt_wrapper">
+            {include '../header.latte'}
+
+            <div class="content d-flex flex-column flex-column-fluid" id="kt_content">
+                <div class="subheader py-2 py-lg-12 subheader-transparent" id="kt_subheader">
+                    <div class="container d-flex align-items-center justify-content-between flex-wrap flex-sm-nowrap">
+                        <div class="d-flex align-items-center flex-wrap mr-1">
+                            <div class="d-flex flex-column">
+                                <h2 class="text-white font-weight-bold my-2 mr-5">Objednávky</h2>
+                                <div class="d-flex align-items-center font-weight-bold my-2">
+                                    <a n:href="Homepage:default" class="opacity-75 hover-opacity-100">
+                                        <i class="flaticon2-shelter text-white icon-1x"></i>
+                                    </a>
+                                    <span class="label label-dot label-sm bg-white opacity-75 mx-3"></span>
+                                    <a n:href="this" class="text-white text-hover-white opacity-75 hover-opacity-100">Objednávky</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <a n:href="add" class="btn btn-white font-weight-bold py-3 px-6 mr-2" data-toggle="tooltip" title="Vytvorte si novú objednávku" data-placement="top">Nová objednávka</a>
+                        </div>
+                    </div>
+                </div>
+
+                    <div class="d-flex flex-column-fluid">
+                        <div class="container">
+                            <div class="card card-custom gutter-b">
+                                <div class="card-header">
+                                    <div class="card-title">
+                                        <h3 class="card-label">
+                                            Objednávky
+                                            <small>vaše objednávky, zoznam všetkych objednávok, ktoré ste si u nás vytvorili</small>
+                                        </h3>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    {control orderGrid}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+            </div>
+
+            {include '../footer.latte'}
+        </div>
+    </div>
+</div>
+{include '../user.latte'}

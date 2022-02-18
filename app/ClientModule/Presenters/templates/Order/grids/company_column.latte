@@ -1,0 +1,7 @@
+{if $item->getCompany()}
+    <a href="{plink :Client:Company:edit id=>$item->getCompany()->getId()}" class="text-dark-75 font-weight-bolder text-hover-primary">
+        {$item->getCompany()->getName()}
+    </a>
+{else}
+    <span class="label label-danger label-inline font-weight-lighter">nie je</span>
+{/if}

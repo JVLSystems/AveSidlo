@@ -1,0 +1,61 @@
+<div class="top-bar-area bg-dark text-light">
+    <div class="container">
+        <div class="row align-center client-mobile-row">
+            <div class="col-lg-7 address-info">
+                <div class="info box">
+                    <ul>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i> <a class="classic-anchor" target="_blank" href="https://goo.gl/maps/6yvSY3jv97AEyoKaA">Dolné Pažitie 91/85, 911 01 Trenčín</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope-open"></i> <a class="classic-anchor" href="mailto:info@avesidlo.sk">info@avesidlo.sk</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i> <a class="classic-anchor" href="tel:+421944868214">+421 948 888 888</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-5 col-sm-12 col-xs-12 text-right button client-mobile-button">
+                <div class="item-flex">
+                    <a class="button" n:href=":Client:Homepage:default"><i class="fas fa-users"></i> Klientská zóna</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<header id="home">
+    <nav class="navbar navbar-default navbar-sticky dark attr-border bootsnav">
+
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" n:href="Homepage:default">
+                    <img src="{$basePath}/assets/img/logo.png" class="logo" alt="Logo">
+                </a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="navbar-menu">
+                <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
+                    <li>
+                        <a n:class="$presenter->isLinkCurrent('Homepage:*') ? 'active'" n:href="Homepage:default">Úvod</a>
+                    </li>
+                    <li>
+                        <a n:class="$presenter->isLinkCurrent('Page:aboutCompany') ? 'active'" n:href="Page:aboutCompany">Naša spoločnosť</a>
+                    </li>
+                    <li>
+                        <a n:class="$presenter->isLinkCurrent('Page:services') ? 'active'" n:href="Page:services">Služby</a>
+                    </li>
+                    <li>
+                        <a href="{plink Homepage:default}#pricelist">Cenník</a>
+                    </li>
+                    <li>
+                        <a n:class="$presenter->isLinkCurrent('Page:contact') ? 'active'" n:href="Page:contact">Kontakt</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
